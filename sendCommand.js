@@ -1,5 +1,9 @@
-const HOME = process.env.HOME || process.env.HOMEPATH || process.env.USERPROFILE || '';
-const CREDS_DEFAULT = require('path').join(HOME, '.ps4-wake.credentials.json');
+const CREDS_DEFAULT = {
+  'client-type': process.env.CLIENT_TYPE,
+  'auth-type': process.env.AUTH_TYPE,
+  'user-credential': process.env.USER_CREDENTIAL,
+};
+
 const Waker = require('ps4-waker');
 const { Socket, Detector } = Waker;
 const waker = new Waker(CREDS_DEFAULT);

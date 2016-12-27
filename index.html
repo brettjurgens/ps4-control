@@ -1,9 +1,9 @@
-!doctype
+<!doctype>
 <html>
   <head>ps4 app</head>
   <script type="text/javascript">
     function launch(name) {
-      fetch(`/${name}`);
+      fetch(`/${name}${window.location.search}`);
     }
   </script>
   <body>
