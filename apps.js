@@ -1,0 +1,8 @@
+module.exports = {
+  NETFLIX:  'CUSA00129',
+  AMAZON:   'CUSA00130',
+  YOUTUBE:  'CUSA01015',
+  HULU:			'CUSA00131',
+  HBOGO:		'CUSA01567',
+  PLEX: 	  'CUSA01850'
+}

@@ -1,0 +1,15 @@
+!doctype
+<html>
+  <head>ps4 app</head>
+  <script type="text/javascript">
+    function launch(name) {
+      fetch(`/${name}`);
+    }
+  </script>
+  <body>
+    <button onclick="launch('netflix')">Netflix</button>
+    <button onclick="launch('hulu')">Hulu</button>
+    <button onclick="launch('amazon')">Amazon</button>
+    <button onclick="launch('hbogo')">HBO Go</button>
+  </body>
+</html>
